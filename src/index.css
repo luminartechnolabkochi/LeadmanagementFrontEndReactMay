@@ -1,0 +1,14 @@
+body {
+  background-color: #f8f9fa; /* Light gray background */
+}
+.card {
+  background-color: #ffffff; /* White card background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px;
+}
+.card h2 {
+  color: #007bff; /* Bootstrap primary color */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
