@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { leadCreateApi } from '../services/api';
 
 function LeadCreate() {
 
@@ -11,11 +12,16 @@ function LeadCreate() {
                                     course_mode:"",status:""
                                 })
 
-        function handleSubmit(event){
+        async function handleSubmit(event){
 
             event.preventDefault()
 
             console.log(lead);
+
+            let response=await leadCreateApi(lead)
+
+            console.log(response.data);
+            
             
         }
 
